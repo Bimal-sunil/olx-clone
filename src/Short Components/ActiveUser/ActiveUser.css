@@ -1,0 +1,56 @@
+.active-user{
+    width: 6%;
+    position: relative;
+    left: 0.8em;
+    cursor: pointer;
+}
+
+.active-user_icon{
+    width: 2em;
+    height: 2em;
+    background-color: var(--color-1);
+    border-radius: 50%;
+    margin-left: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-user_icon h2{
+    font-size: 1.2em;
+    color: #fff;
+    font-family: var(--font-1);
+}
+
+.active-user .content {
+    width: 15em;
+    position: absolute;
+    top: 3em;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #fff;
+    box-shadow: 2px 2px 5px var(--shadow-color), -2px -2px 5px var(--shadow-color);
+    border-radius: 10px;
+    padding: 1em;
+  }
+  
+  .active-user .content::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .active-user .content h2 {
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-family: var(--font-1);
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,107 @@
+.slider {
+  width: 75.2em;
+  position: relative;
+  top: 4em;
+  height: 27rem;
+  background-color: var(--shadow-color);
+  border-radius: 5px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.fa-chevron-left {
+  font-weight: 700;
+  width: 30px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0.5em;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  box-shadow: 2px 2px 2px var(--shadow-color), 0 -2px 2px var(--shadow-color);
+  border-radius: 0 3px 3px 0;
+  z-index: 10;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.fa-chevron-right {
+  font-weight: 700;
+  width: 30px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  box-shadow: 0 2px 2px var(--shadow-color), -2px -2px 2px var(--shadow-color);
+  border-radius: 3px 0 0 3px;
+  z-index: 10;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.head {
+  display: flex;
+  width: 100%;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head .title {
+  font-family: var(--font-1);
+  font-size: 1.5rem;
+}
+
+.head h6 {
+  font-family: var(--font-1);
+  font-size: 1em;
+  border-bottom: 3px solid #000;
+  cursor: pointer;
+  transition: 300ms ease-in;
+}
+
+.head h6:hover{
+  border-bottom: none;
+  transition: 300ms ease-in;
+}
+.slider_container{
+  width: 100%;
+  height: 23em;
+  overflow: hidden;
+ 
+}
+
+.slider__track{
+  list-style: none;
+  position: relative;
+  height: 100%;
+  left: 0;
+  /* background-color: aquamarine; */
+  display: flex;
+  transition: 400ms ease-in-out;
+  
+}
+
+.slider__track .slider__items{
+  width: 17.55rem;
+  margin-top: 1em;
+  margin-left: 1.35%;
+}
+
+.slider__track .slider__items:nth-child(1){
+  margin-left: 0;
+}
+
+/* .slider__track .slider__items:last-child{
+  margin-right: 1em;
+} */

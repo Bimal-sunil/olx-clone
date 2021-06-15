@@ -1,0 +1,56 @@
+.sub-header{
+    position: relative;
+    top: 4em;
+    max-height: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #fff;
+    box-shadow: 0 1px 7px rgba(86, 86, 86, 0.3);
+    display: flex;
+    align-items: center;
+    z-index: 9;
+}
+
+.sub-header .heading {
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.heading h1 {
+  font-size: 1em;
+  font-family: var(--font-1);
+  text-transform: uppercase;
+}
+
+.heading i{
+    font-size: 1em;
+}
+
+.heading:focus i{
+    transform: rotate(180deg);
+  transition: 400ms;
+}
+
+/* Contents */
+
+.contents{
+  width: 80%;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+.contents p{
+  font-size: 0.8em;
+  font-family: var(--font-1);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.contents p:hover{
+  color: var(--border-color);
+  transition: 400ms;
+}
